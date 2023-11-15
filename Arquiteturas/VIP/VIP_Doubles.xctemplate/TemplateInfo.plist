@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Module</string>
+	<key>Description</key>
+	<string>TestsDoubles Module using pattern with VIP, composed by InteractorInputProtocolSpy, InteractorOutputProtocolSpy, PresenterInputProtocolSpy, PresenterOutputPresenterSpy and RouterProtocolSpy</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the scene to be created</string>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Name</key>
+			<string>Scene</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>The name of the SDK where will be created</string>
+			<key>Identifier</key>
+			<string>sdkName</string>
+			<key>Name</key>
+			<string>SDK Name</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___InteractorProtocolSpy.swift</string>
+			<key>Description</key>
+			<string>Interactor implementation</string>
+			<key>Identifier</key>
+			<string>moduleInteractorName</string>
+			<key>Name</key>
+			<string>Interactor:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___PresenterProtocolSpy.swift</string>
+			<key>Description</key>
+			<string>Presenter implementation</string>
+			<key>Identifier</key>
+			<string>modulePresenterName</string>
+			<key>Name</key>
+			<string>Presenter:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>Summary</key>
+	<string>Module using pattern with VIP Test Doubles, composed by InteractorProtocolSpy and PresenterProtocolSpy.</string>
+</dict>
+</plist>

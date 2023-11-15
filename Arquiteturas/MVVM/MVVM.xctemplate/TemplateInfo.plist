@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Module</string>
+	<key>Description</key>
+	<string>Module using MVVM, composed by ViewController, ViewModel and Compose.</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>The name of the scene to be created</string>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Name</key>
+			<string>Scene</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ViewModel.swift</string>
+			<key>Description</key>
+			<string>ViewModel implementation</string>
+			<key>Identifier</key>
+			<string>moduleViewModelName</string>
+			<key>Name</key>
+			<string>ViewModel</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ViewController.swift</string>
+			<key>Description</key>
+			<string>ViewController implementation</string>
+			<key>Identifier</key>
+			<string>moduleViewName</string>
+			<key>Name</key>
+			<string>ViewController</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Protocols.swift</string>
+			<key>Description</key>
+			<string>Module protocols</string>
+			<key>Identifier</key>
+			<string>moduleProtocolsName</string>
+			<key>Name</key>
+			<string>Protocols:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Compose.swift</string>
+			<key>Description</key>
+			<string>Compose implementation</string>
+			<key>Identifier</key>
+			<string>moduleViewName</string>
+			<key>Name</key>
+			<string>Compose</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>SortOrder</key>
+	<string>9</string>
+	<key>Summary</key>
+	<string>Module using MVP, composed by ViewController, ViewModel and Compose.</string>
+</dict>
+</plist>

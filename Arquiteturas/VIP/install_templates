@@ -1,0 +1,17 @@
+#!/bin/sh
+TEMPLATES_DIR=~/Library/Developer/Xcode/Templates
+
+if [ -d ~/Library/Developer/Xcode ]
+then 
+    echo "Xcode detected ✅"
+    echo "Removing old templates"
+    rm -r $TEMPLATES_DIR/VIP_*
+    echo "Creating theme folder"
+    mkdir -p $TEMPLATES_DIR
+    echo "Copying templates ..."
+    cp -r *.xctemplate $TEMPLATES_DIR
+    echo "Xcode Templates installed ✅"
+    echo "You may need to restart Xcode to use templates"
+else
+    echo "Xcode doesn't seem to be installed on your computer 🚨"
+fi

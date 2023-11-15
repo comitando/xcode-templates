@@ -1,0 +1,44 @@
+#!/bin/sh
+TEMPLATES_DIR=~/Library/Developer/Xcode/Templates
+
+if [ -d ~/Library/Developer/Xcode ]
+then 
+    echo "Xcode detected ✅\n\n"
+
+    echo "Creating template folder"
+    mkdir -p $TEMPLATES_DIR
+    echo "\n"
+
+    echo "Removing old MVP templates"
+    rm -r $TEMPLATES_DIR/MVP_*
+    echo "Copying templates ..."
+    cp -r MVP/*.xctemplate $TEMPLATES_DIR
+    echo "MVP Xcode Templates installed ✅"
+    echo "\n"
+
+    echo "Removing old MVVM templates"
+    rm -r $TEMPLATES_DIR/MVVM_*
+    echo "Copying templates ..."
+    cp -r MVVM/*.xctemplate $TEMPLATES_DIR
+    echo "MVVM Xcode Templates installed ✅"
+    echo "\n"
+
+    echo "Removing old VIP templates"
+    rm -r $TEMPLATES_DIR/VIP_*
+    echo "Copying templates ..."
+    cp -r VIP/*.xctemplate $TEMPLATES_DIR
+    echo "VIP Xcode Templates installed ✅"
+    echo "\n"
+
+    echo "Removing old VIPER templates"
+    rm -r $TEMPLATES_DIR/VIPER_*
+    echo "Copying templates ..."
+    cp -r VIPER/*.xctemplate $TEMPLATES_DIR
+    echo "VIPER Xcode Templates installed ✅"
+    echo "\n"
+
+
+    echo "You may need to restart Xcode to use templates"
+else
+    echo "Xcode doesn't seem to be installed on your computer 🚨"
+fi
